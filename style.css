@@ -1,0 +1,51 @@
+.kiskep img, .nagykep img{
+    width: 100%;
+}
+header, main, footer, nav, article, section, div{
+    border: 1px solid gray;
+    padding: 10px;
+}
+nav{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+main{
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+}
+h1{
+    font-family: sans-serif;
+}
+.nagykep img{
+    width: 95%;
+
+}
+.kiskep{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+li{
+    display: inline-block;
+}
+/*  Reszponzivitás*/
+@media only screen and (max-width: 800px){
+    .kiskep{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+}
+@media only screen and (max-width: 400px){
+    .kiskep{
+        grid-template-columns: 1fr ;
+        
+    }
+    nav{
+        grid-template-columns: 1fr;
+    
+    }
+
+
+}
